@@ -19,14 +19,14 @@ var showAlarmMessage = function(){
 		if(alarm.message.length > 0){ //もしalarm.messageの長さが0より大きかったら
 				message = alarm.message; //messageはalarm.message
 		}
-		if(Notification.permission == "granted"){ //もし
+		if(Notification.permission == "granted"){ //もし、、
 				var notification = new Notification(message);
 		}
 		alarm.output.textContent = message; //alarmで表示する文はmessage
 };
 
 var update = function(){ //以下updateの説明（まだカウントダウンできるかどうか調べる。まだ残り時間があったらカウントダウンしろ。それ以外はメッセージを表示しろ）
-		alarm.duration = alarm.duration - 1; 
+		alarm.duration = alarm.duration - 1; //alarmのdurationは、alarm.durationから1引いた数
 		if(isReadyToCountdown()){ //もしisReadyToCountdownだったら
 				updateCounter(); //updateCounterを呼び出す？？
 				window.setTimeout(update, INTERVAL); //１秒後に、updateを呼び出す（(Window.setTimeoutのしくみ　window.setTimeout("呼び出す関数", "待機時間")で書く。引数に指定した「待機時間」だけ経過した後に「呼び出す関数」を呼び出す。待機時間はミリ秒単位で指定。つまり、INTERVALで指定した秒数（＝１秒）経過した後にupdateを呼び出す。）
