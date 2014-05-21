@@ -1,14 +1,14 @@
+body {
+    background-color:  #ECECF5;
+}
+
 #control{
     padding: .5em 1em;
 }
 
 #control select{
-    font-size: 18px;
-    padding: .5em 1em;
-    width: 10em;
+    width: 140px;
     border: solid 1px #363636;
-    border-radius: 2px;
-    box-shadow: 1px 1px 1px rgba(0, 0, 0, .2) inset;
 }
 
 #control input[type=text]{
@@ -18,9 +18,24 @@
 }
 
 #countdown{
-		font-size: 72px;
+		font-size: 32px;
 		position: absolute;
 		top: 50%;
 		text-align: center;
 		width: 100%;
+        color: #999;
+		width: 100%;
+}
+
+form {
+    font-size: 15px;
+   
+}
+
+form span{
+    width: 100px;
+    
+    display: inline-block;
+    text-align: center;
+    color: #666;
 }

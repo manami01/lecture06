@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="ja">
   <head>
-    <title>ronpro2014s#06</title>　<!--   -->
+    <title>ronpro2014s#06</title>
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="css/app.css">
     <link rel="stylesheet" type="text/css" href="css/alerm.css">
@@ -9,7 +9,9 @@
   <body>
     <div id="control">
       <form>
-        <select id="duration"> 
+        <span>予鈴</span>
+        <select id="yorei">
+          <option value="2">2秒後</option>
           <option value="5">5秒後</option>
           <option value="10">10秒後</option>
           <option value="30">30秒後</option>
@@ -19,10 +21,34 @@
           <option value="900">15分後</option>
           <option value="1800">30分後</option>
         </select>
-        に
+        <br>
+        <span>発表時間</span>
+        <select id="duration">
+          <option value="5">5秒後</option>
+          <option value="10">10秒後</option>
+          <option value="30">30秒後</option>
+          <option value="60">60秒後</option>
+          <option value="90">90秒後</option>
+          <option value="180">3分後</option>
+          <option value="900">15分後</option>
+          <option value="1800">30分後</option>
+        </select>
+        　に　
         <input type="text" id="message">
-        と
+        　と　
         <button type="button" id="start">表示する</button>
+        <br>
+        <span>討論時間</span>
+        <select id="touron">
+          <option value="5">5秒間</option>
+          <option value="10">10秒間</option>
+          <option value="30">30秒間</option>
+          <option value="60">60秒間</option>
+          <option value="90">90秒間</option>
+          <option value="180">3分間</option>
+          <option value="900">15分間</option>
+          <option value="1800">30分間</option>
+        </select>
       </form>
     </div>
     <div id="countdown">
